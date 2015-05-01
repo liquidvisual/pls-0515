@@ -1,0 +1,42 @@
+/*
+    SECTIONS.CSS
+
+    - Last updated: ^^^^^^^^
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Sections
+//-----------------------------------------------------------------
+
+.lead-section {
+	background: $secondary-color;
+	color: white;
+	padding: rem-calc(20 0);
+
+	h1, h2, h3, h4, h5, h6 {
+		color: white;
+	}
+
+	h2 {
+		display: table;
+		height: 56px;
+		width: 100%;
+		margin-bottom: rem-calc(20);
+
+		.text {
+			display: table-cell;
+			vertical-align: bottom;
+		}
+	}
+
+	p {
+		font-size: rem-calc(14);
+	}
+}
+
+//=========================================
+//
+//=========================================

@@ -1,0 +1,25 @@
+- title: Home
+  url: /
+
+- title: About
+  url: /about/
+
+- title: Services
+  url: /services/
+
+- title: Products
+  url: /products/
+  include_children_in_nav: true
+  children:
+    - title: Sonia
+      url: /products/sonia/
+    - title: Year View
+      url: /products/year-view/
+    - title: Outlook Year View
+      url: /products/outlook-year-view/
+
+- title: News
+  url: /news/
+
+- title: Contact
+  url: /contact/

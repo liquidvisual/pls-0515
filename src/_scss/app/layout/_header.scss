@@ -1,0 +1,53 @@
+/*
+    HEADER.CSS
+
+    - Last updated: ^^^^^^^^
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Header
+//-----------------------------------------------------------------
+
+.page-header {
+	position: relative;
+
+	@media #{$large-up} {
+	    height: rem-calc(134);
+	}
+}
+
+//=========================================
+//
+//=========================================
+
+.page-header .logo {
+	position: relative;
+
+	@media #{$large-up} {
+	    top: rem-calc(36);
+	}
+
+	img {
+		@media #{$devices-only} {
+			padding: rem-calc(15 0);
+		    width: rem-calc(160);
+		}
+		@media #{$small-only} {
+	    	padding: rem-calc(15 0);
+	        width: rem-calc(120);
+		}
+	}
+}
+
+//=========================================
+// Mobile Menu
+//=========================================
+
+.header-mobile-menu {
+	position: absolute;
+	bottom: 20px;
+	right: 15px;
+}

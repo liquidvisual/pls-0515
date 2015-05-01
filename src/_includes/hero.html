@@ -1,0 +1,59 @@
+{% assign hero_images = site.data.carousel_slides %}
+
+<!-- HERO MODULE -->
+<div class="js-carousel lv-hero-module">
+
+    {% for hero in hero_images %}
+
+    <!-- Hero Item -->
+    <div class="lv-hero" style="background-image: url('{{ hero.image | prepend: site.assets }}')" data-background-image="{{ hero.image | prepend: site.assets }}">
+
+        <div class="table-wrapper">
+        <div class="table-cell">
+
+            <div class="row outer-row">
+
+                <!-- Left / Right caption alignment -->
+                {% if hero.caption_align == "right" %}
+                    <div class="medium-6 medium-offset-6 large-4 large-offset-8 columns text-center">
+                    <div class="lv-hero-caption animated"> <!-- Leave here -->
+                {% else %}
+                    <div class="medium-8 large-5 columns">
+                    <div class="lv-hero-caption animated"> <!-- Leave here -->
+                {% endif %}
+
+                        <h1><span>{{ hero.caption_title }}</span></h1>
+
+                        {% comment %}
+                        <div class="lv-hero-caption-body">
+                            <p>{{ hero.caption_body }}</p>
+                        </div>
+                        <!-- <p><a href="#" class="button large radius"><i class="fa fa-play"></i>&nbsp; Learn More</a></p> -->
+                        {% endcomment %}
+
+                    </div> <!-- .lv-hero-caption -->
+                </div> <!-- .columns -->
+
+            </div> <!-- .row -->
+            </div>
+        </div> <!-- .table-wrapper -->
+
+    </div> <!-- .lv-hero -->
+
+    {% endfor %}
+
+</div> <!-- .lv-hero-module -->
+
+{% comment %}
+<!-- Hero Controls -->
+<div class="lv-hero-controls show-for-xxlarge-up">
+    <span href="#" class="lv-hero-next"></span>
+    <span href="#" class="lv-hero-prev"></span>
+</div>
+<!-- Bullets -->
+<div class="row">
+	<div class="columns">
+		<div class="lv-hero-carousel-bullets show-for-medium-up"></div>
+	</div>
+</div> <!-- .row -->
+{% endcomment %}
