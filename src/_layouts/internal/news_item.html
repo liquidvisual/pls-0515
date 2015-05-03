@@ -6,10 +6,18 @@ back_title: News
 
 {% assign item = site.data.articles[0] %}
 
-<article class="media-article">
-    <div class="media-body">
-        <h1>{{ item.title }}</h1>
-        <date class="media-tagline">{{ item.date | date: "%A %d %b %Y" }}</date>
-        {{ content | markdownify }}
+<div class="row outer-row">
+    <div class="large-9 columns">
+        <main class="main main-condensed">
+
+			<article class="media-article">
+			    <div class="media-body">
+			        <h1>{{ item.title }}</h1>
+			        <date class="media-tagline">{{ item.date | date: "%A %d %b %Y" }}</date>
+			        {{ content | markdownify }}
+			    </div>
+			</article>
+
+        </main>
     </div>
-</article>
+</div>

@@ -3,8 +3,9 @@ layout: internal/text_page
 title: Outlook Year View
 title_image: "/img/content/year-view-logo-white@2x.png"
 permalink: /products/outlook-year-view/
-hero_image: "/img/content/banners/banner-clock-calendar.jpg"
+hero_image: /img/content/banners/banner-clock-calendar.jpg
 back_title: Products
+sidebar: sidebar_outlook_year_view.html
 ---
 
 <!--- This child document initializes the page in Jekyll. -->

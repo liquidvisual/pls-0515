@@ -1,7 +1,7 @@
 /*
     SECTIONS.CSS
 
-    - Last updated: ^^^^^^^^
+    - Last updated: 03.05.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -9,11 +9,21 @@
 //-----------------------------------------------------------------
 
 //-----------------------------------------------------------------
-// Main
+// Content
 //-----------------------------------------------------------------
 
-.main {
-	padding: rem-calc(30 0 60 0);
+.content {
+	padding: rem-calc(15 0 60 0);
+
+	@media #{$medium-up} {
+	    padding: rem-calc(30 0 60 0);
+	}
+}
+
+.main-condensed {
+	@media #{$large-up} {
+	    padding-right: rem-calc(100);
+	}
 }
 
 //-----------------------------------------------------------------
@@ -43,7 +53,7 @@
 
 	p {
 		font-size: rem-calc(14);
-		margin-bottom: rem-calc(39);
+		padding-bottom: rem-calc(20);
 	}
 
 	// .button {

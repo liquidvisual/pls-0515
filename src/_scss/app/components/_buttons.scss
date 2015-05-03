@@ -25,6 +25,10 @@
 		font-size: rem-calc(16);
 		line-height: 0;
 	}
+
+	&:hover {
+		background: lighten($primary-color, 10%);
+	}
 }
 
 .button-slim {
@@ -44,5 +48,57 @@
 }
 
 //=========================================
-//
+// CTU Button
 //=========================================
+
+.ctu-button {
+	background: $primary-color;
+	width: 100%;
+	text-align: right;
+	padding: rem-calc(15 15);
+
+	i {
+		position: relative;
+		top: 12px;
+		// left: -10px;
+		font-size: rem-calc(30);
+		line-height: 0;
+		vertical-align: top;
+		float: left;
+	}
+}
+
+//=========================================
+// Product Button
+//=========================================
+
+.product-button {
+	position: relative;
+	text-align: right;
+	padding: rem-calc(30 15);
+	width: 100%;
+	background: #3A3C3C;
+
+	.text {
+		position: absolute;
+		bottom: 10px;
+		right: 20px;
+	}
+
+	img {
+		position: absolute;
+		top: 10px;
+		right: 20px;
+	}
+
+	&.slim {
+		padding: 15px;
+		img {
+			position: static;
+		}
+	}
+
+	&:hover {
+		background: black;
+	}
+}

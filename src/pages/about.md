@@ -2,7 +2,8 @@
 layout: internal/text_page
 title: About
 permalink: /about/
-hero_image: "/img/content/banners/banner-canola-field.jpg"
+hero_image: /img/content/banners/banner-canola-field.jpg
+sidebar: sidebar_about.html
 ---
 
 <!--- This child document initializes the page in Jekyll. -->

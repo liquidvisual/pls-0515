@@ -3,8 +3,9 @@ layout: internal/text_page
 title: Year View
 title_image: "/img/content/year-view-logo-white@2x.png"
 permalink: /products/year-view/
-hero_image: "/img/content/banners/banner-calendar.jpg"
+hero_image: /img/content/banners/banner-calendar.jpg
 back_title: Products
+sidebar: sidebar_year_view.html
 ---
 
 <!--- This child document initializes the page in Jekyll. -->

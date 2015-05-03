@@ -2,7 +2,8 @@
 layout: internal/text_page
 title: Services
 permalink: /services/
-hero_image: "/img/content/banners/banner-tablet.jpg"
+hero_image: /img/content/banners/banner-tablet.jpg
+sidebar: sidebar_services.html
 ---
 
 <!--- This child document initializes the page in Jekyll. -->

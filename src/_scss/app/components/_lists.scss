@@ -16,6 +16,28 @@ ul li {
 }
 
 //-----------------------------------------------------------------
+// Feature List
+//-----------------------------------------------------------------
+
+.feature-list {
+	list-style: none;
+	margin: 0;
+
+	li {
+		background: $primary-color;
+		color: white;
+		font-size: $h3-font-size;
+		padding: rem-calc(15);
+		margin-bottom: rem-calc(15);
+
+		i {
+			font-size: rem-calc(40);
+			float: right;
+		}
+	}
+}
+
+//-----------------------------------------------------------------
 // Block List
 //-----------------------------------------------------------------
 

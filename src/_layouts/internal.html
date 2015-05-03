@@ -7,11 +7,7 @@ layout: master
 <!-- HERO MODULE -->
 <div class="lv-hero-module is-internal">
     <div class="lv-hero" style="background-image: url('{{ hero | prepend: site.assets }}')" data-background-image="{{ hero | prepend: site.assets }}">
-        <div class="row row-outer">
-            <div class="columns">
-
-            </div>
-        </div>
+        <!-- ... -->
     </div>
 </div>
 
@@ -45,17 +41,5 @@ layout: master
 
 <!-- CONTENT -->
 <section class="content">
-    <div class="row outer-row">
-        <div class="large-9 columns">
-            <main class="main">
-                <header class="main-header">
-
-                </header>
-                {{ content }}
-            </main>
-        </div>
-        <div class="large-3 columns">
-            {% include sidebar.html %}
-        </div>
-    </div>
+    {{ content }}
 </section>

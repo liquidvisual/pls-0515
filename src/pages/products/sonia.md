@@ -3,8 +3,9 @@ layout: internal/text_page
 title: Sonia
 title_image: "/img/content/sonia-logo-white@2x.png"
 permalink: /products/sonia/
-hero_image: "/img/content/banners/banner-students.jpg"
+hero_image: /img/content/banners/banner-students.jpg
 back_title: Products
+sidebar: sidebar_sonia.html
 ---
 
 <!--- This child document initializes the page in Jekyll. -->

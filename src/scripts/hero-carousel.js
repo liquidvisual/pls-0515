@@ -1,27 +1,32 @@
 /*
-    HERO-CAROUSEL - Last updated: 01.05.15
+    HERO-CAROUSEL - Last updated: 04.05.15
 */
-//-----------------------------------------------------------------
-// Variables
-//-----------------------------------------------------------------
-
-var TOUCH_ENABLED = $(".touch").length;
-
 //-----------------------------------------------------------------
 // Document Ready
 //-----------------------------------------------------------------
 
 $(function() {
+
+    //==================================================
+    // Variables
+    //==================================================
+
+    var TOUCH_ENABLED = $(".touch").length;
+
+    //==================================================
+    // Launch
+    //==================================================
+
     function launchHeroCarousel() {
         var largeUp = $(window).width() > 1025; // no more touch
 
         bxSliderHero = $('.js-carousel').bxSlider({
-            auto: false, //(largeUp ? true : false),
+            auto: false, // (largeUp ? true : false),
             mode: 'fade',
             adaptiveHeight: true,
             responsive: true,
             touchEnabled: false,
-            speed: 2000,
+            speed: 1800,
             pause: 6000, // Slow timer
             slideMargin: 0,
             slideSelector: ".lv-hero",
