@@ -30,7 +30,7 @@
     <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
 </head>
 <body>
-    <div class="lv-super">
+    <div class="lv-super dev-mode-enabled">
         <div class="lv-page">
 
             <!-- HEADER -->
@@ -168,7 +168,7 @@
 
 <!-- HERO MODULE -->
 <div class="lv-hero-module is-internal">
-    <div class="lv-hero" style="background-image: url('/assets')" data-background-image="/assets">
+    <div class="lv-hero" style="background-image: url('/assets/img/content/banners/banner-calendar.jpg')" data-background-image="/assets/img/content/banners/banner-calendar.jpg">
         <div class="row row-outer">
             <div class="columns">
 
@@ -178,61 +178,182 @@
 </div>
 
 <!-- HEADER -->
-<section class="lead-section">
+<header class="header">
     <div class="row outer-row">
         <div class="columns">
             <div class="animated fadeInLeft">
-                <h1>Year View</h1>
+                
+                    <h1><img width="170" src="/assets/img/content/year-view-logo-white@2x.png" title="Year View" alt="Year View"></h1>
+                
             </div>
         </div>
     </div>
-</section>
-
-<!-- BREADCRUMBS -->
-<nav class="breadcrumbs-bar">
-    <div class="row outer-row">
-        <div class="columns">
-            
+</header>
 
 
-
-<ul class="lv-breadcrumbs">
-    <li><a href="/">Home</a></li>
-    
-        
-            <li><a href="/products/">products</a></li>
-        
-    
-        
-            <li class="active">year view</li>
-        
-    
-</ul>
+    <!-- BREADCRUMBS -->
+    <nav class="breadcrumbs-bar">
+        <div class="row outer-row">
+            <div class="columns">
+                <a href="/products/"><i class="fa fa-angle-left"></i> Back to Products</a>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
+
+<!-- CONTENT -->
 <section class="content">
     <div class="row outer-row">
-        <div class="large-9 columns">
-            <main class="main">
-                <header class="main-header">
+    <div class="large-9 columns">
+        <main class="main">
+            <!--- This child document initializes the page in Jekyll. -->
 
-                    <!-- Opt-in Back Button -->
-                    
+<h2 id="overview">Overview</h2>
 
-                </header>
-                <!--- This child document initializes the page in Jekyll. -->
+<p>Year View provides a full year view planner on various calendar data sources within a web browser using the latest Microsoft technologies to provide users with a rich interactive experience!<br />
+Year View is ideal for displaying annual leave on your Intranet or events you are promoting on your Internet site. The client is also culture aware allowing the user to pick from a number of languages.</p>
 
-            </main>
-        </div>
-        <div class="large-3 columns">
-            
-        </div>
+<h2 id="client-features">Client Features</h2>
+
+<ul>
+  <li>Events are displayed using coloured bands that indicate their categories.</li>
+  <li>Category list can be collapsed to maximise planner viewing area.</li>
+  <li>Navigate backwards and forwards through years.</li>
+  <li>Basic printing support.</li>
+  <li>Can click month to set as start month for ‘a year’.</li>
+  <li>Clickable events so that you can download.</li>
+  <li>Multiple language support: Chinese (Simplified), English, French, German, Hebrew, Italian, Japanese, Russian, Spanish and Swedish.</li>
+  <li>Need a language not mentioned above? Translate the English text into a language we do not currently support and get a FREE Year View licence! Contact us to arrange a translation.</li>
+  <li>Appointment count shown</li>
+  <li>Can toggle the display of subject text in the event bands with automatic scaling to fit within</li>
+  <li>Mouse over event band to get details.</li>
+  <li>Use slider to increase/decrease the band height to better fit your display size.</li>
+  <li>On-the-fly translation of appointment and category text powered by Microsoft Translator.</li>
+</ul>
+
+<h2 id="server-features">Server Features</h2>
+
+<ul>
+  <li>Set the displayed Calendar Title</li>
+  <li>Choose whether to default the display of Subject in each Band</li>
+  <li>Enable/disable back and forward navigation</li>
+  <li>Enable/disable clicking to download individual appointment</li>
+  <li>Enable/disable clicking to download all appointments for a category</li>
+  <li>Enable/disable clicking to download all appointments for an entire year</li>
+  <li>Choose the default first month of the year</li>
+  <li>Choose the start day for the weekend</li>
+  <li>Choose the display interval method, i.e. year range (2010-2011), start year (2010), end year (2011)</li>
+  <li>Choose the default band height</li>
+  <li>Choose the minimum number of bands that should be expected for a cell</li>
+  <li>Export providers (used for downloading appointments): iCalendar</li>
+  <li>Standard data provider: Outlook Year View(OYV) Xml</li>
+  <li>Optional/extra data providers:
+    <ul>
+      <li>Exchange 2003</li>
+      <li>Exchange 2007</li>
+      <li>Exchange 2010</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="upgrades--support">Upgrades &amp; Support</h2>
+
+<p>If you have purchased a licence of the Year View product, you are entitled to FREE version upgrades for the first year, along with 3 FREE support incidents. All support is provided via email - details on the <a href="/contact/">Contact page</a>.</p>
+
+<h2 id="requirements">Requirements</h2>
+
+<p><strong>Server</strong></p>
+
+<p>A server operating system running ASP .NET 4 on IIS is required. According to the Microsoft site the following are suitable: Windows Server 2003 SP2, Windows Server 2008, Windows Server 2008 R2.</p>
+
+<p>The use of the data providers is clearly dependent on having the appropriate source to connect to, so for the current providers:</p>
+
+<p>Xml - Needs an Xml file</p>
+
+<ul>
+  <li>Exchange 2003 - Needs connection details for your Exchange 2003 server (uses WebDAV)</li>
+  <li>Exchange 2007 - Needs connection details for your Exchange 2007 server (uses WebDAV)</li>
+  <li>Exchange 2010 - Needs connection details for your Exchange 2010 server</li>
+</ul>
+
+<p><strong>Client</strong></p>
+
+<p>According to the Microsoft website Silverlight version 4 supports all of the major browsers on Mac OS X, Linux and Windows. This includes browsers such as Firefox, Safari, Chrome, and Internet Explorer.</p>
+
+<p>Wikipedia provides a nice breakdown of operating systems and web browsers that can be viewed at: Wikipedia Silverlight 4 description.</p>
+
+<p>Please note: The on-the-fly translation is powered by Microsoft Translator which is an external service that Planet Software cannot provide any support/warranty on. The button that controls this functionality can be hidden if desired.</p>
+
+<p><strong>Try before you buy!</strong> Click on either the Soccer World Cup or Annual Leave Demo in the Quick Links info box.</p>
+
+<h2 id="pricing">Pricing</h2>
+
+<table>
+	<tbody>
+		<tr>
+			<th>Licence Type</th>
+			<th>Price(AUD)</th>
+			<th>Restrictions</th>
+		</tr>
+		<tr>
+			<td>Single server licence* (inc. OYV Xml data provider, iCalendar export provider, and single licence for OYV)</td>
+			<td align="center">$195.00</td>
+			<td>Per Server</td>
+		</tr>
+		<tr>
+			<td>Year View Exchange 2003 Data Provider</td>
+			<td align="center">$50.00</td>
+			<td>Per Server</td>
+		</tr>
+		<tr>
+			<td>Year View Exchange 2007 Data Provider</td>
+			<td align="center">$75.00</td>
+			<td>Per Server</td>
+		</tr>
+		<tr>
+			<td>Year View Exchange 2010 Data Provider</td>
+			<td align="center">$100.00</td>
+			<td>Per Server</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>Please note that the price is in Australian Dollars (excludes GST).</p>
+
+<ul>
+  <li>on a single production web server. You are also permitted to use the same license for up to two non-production development or staging servers.</li>
+</ul>
+
+        </main>
     </div>
+    <div class="large-3 columns">
+        <aside class="sidebar">
+        	
+        	    <p>
+	<a class="image-popup-no-margins" href="/img/content/year-view-large@2x.png"><img src="/assets/img/content/year-view-large@2x.png" alt="Year View"></a>
+</p>
+<br>
+<p>
+	<a href="#" class="button ctu-button"><i class="fa fa-shopping-cart"></i> Buy Now</a>
+	<a href="#" class="button ctu-button"><i class="fa fa-info-circle"></i> Year View FAQ</a>
+</p>
+
+<h3>Related Products</h3>
+
+<p><a href="#" class="button product-button slim"><img width="100" src="/assets/img/content/year-view-logo-white@2x.png"></a></p>
+
+<h3>Quick Links</h3>
+<ul class="side-nav">
+	<li><a href="/products/year-view/version-history">Version History</a></li>
+	<li><a href="/products/year-view/credits">Credits</a></li>
+	<li><a href="http://demos.planetsoftware.com.au/YearViewDemo1/" target="_blank">Soccer World Cup Demo</a></li>
+	<li><a href="http://demos.planetsoftware.com.au/YearViewDemo2/" target="_blank">Annual Leave Demo</a></li>
+</ul>
+        	
+        </aside>
+    </div>
+</div>
 </section>
-
-
 
             <!-- FOOTER -->
             <footer class="global-footer">
@@ -299,7 +420,7 @@
 <section class="global-footer-legal">
     <div class="row outer-row">
         <div class="columns">
-            <a class="left" href="/site-index/">Site Index</a>
+            <a class="left" href="/sitemap/">Sitemap</a>
             <a class="author-logo text-right" href="http://www.muchmedia.com.au">
                 <span class="text">Website by Much Media</span>&nbsp;
                 <img width="20" src="/assets/img/template/muchmedia-logo@2x.png" title="Much Media Freelance Web Design" alt="Much Media">
