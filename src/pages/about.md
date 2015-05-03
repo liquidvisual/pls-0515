@@ -2,7 +2,7 @@
 layout: internal/text_page
 title: About
 permalink: /about/
-hero_image: "/img/content/internal-hero-1.jpg"
+hero_image: "/img/content/banners/banner-canola-field.jpg"
 ---
 
 <!--- This child document initializes the page in Jekyll. -->
@@ -20,3 +20,5 @@ Planet Software is made up of a great team of staff that is passionate about tec
 Microsoft Gold Certified Partners are the elite Microsoft Business Partners who earn the highest customer endorsement. They have the knowledge, skills, and commitment to help implement technology solutions that match your exact business needs. Microsoft Gold Certified Partners have passed the highest level of requirements from Microsoft and have demonstrated the most robust, efficient and scalable implementations of Microsoft technologies in demonstrated enterprise customer deployments or an on-site Microsoft assessment.
 
 <a href="#">Read more about the Microsoft Gold Partner program ></a>
+
+<p><img src="/img/content/microsoft-partner-logo-black@2x.png"><p>

@@ -1,17 +1,107 @@
 /*
     FOOTER.CSS
 
-    - Last updated: ^^^^^^^^
+    - Last updated: 02.05.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------
+
+$footer-body-font-color: darken($grey-color, 25%);
+
 //-----------------------------------------------------------------
-// Footer
+// Global Footer
 //-----------------------------------------------------------------
 
+.global-footer {
+	position: relative;
+	background: $dark-color;
+	// box-shadow: inset 0px 3px 4px 0px rgba(0,0,0,0.09);
 
+	color: $footer-body-font-color;
+
+	h1, h2, h3, h4, h5, h6 {
+		color: darken(white, 20%);
+		margin-bottom: rem-calc(20);
+	}
+}
+
+//-----------------------------------------------------------------
+// Global Footer Link
+//-----------------------------------------------------------------
+
+.footer-links {
+	list-style: none;
+	margin: 0;
+
+	@media #{$small-only} {
+	    margin-bottom: rem-calc(30);
+	}
+
+	a {
+		color: $footer-body-font-color;
+
+		&:hover {
+			@media #{$medium-up} {
+			    color: white;
+			}
+		}
+	}
+
+	i {
+		color: white;
+		padding-right: rem-calc(10);
+	}
+}
+
+//-----------------------------------------------------------------
+// Global Footer Body (Left)
+//-----------------------------------------------------------------
+
+.global-footer-body {
+	padding: rem-calc(40 0 20 0);
+
+	@media #{$medium-up} {
+	    padding: rem-calc(40 0);
+	}
+}
+
+//-----------------------------------------------------------------
+// Global Footer Affiliates
+//-----------------------------------------------------------------
+
+.global-footer-affiliates {
+	@media #{$large-up} {
+	    position: absolute;
+	    bottom: 74px; // magic
+	    width: 100%;
+	}
+}
+
+//-----------------------------------------------------------------
+// Global Footer Legal
+//-----------------------------------------------------------------
+
+.global-footer-legal {
+    line-height: rem-calc(50);
+    background: darken($dark-color, 2%);
+
+ 	a {
+ 		color: white;
+ 		font-size: rem-calc(14);
+ 	}
+
+    .author-logo {
+        display: block;
+        font-size: rem-calc(14);
+        color: rgba(255, 255, 255, .4);
+
+        .text {
+            margin-right: rem-calc(5);
+        }
+    }
+}
 
 //=========================================
 //

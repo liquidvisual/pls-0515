@@ -1,0 +1,70 @@
+{% assign settings = site.data.settings %}
+
+<!-- FOOTER CONTACT -->
+<section class="global-footer-body">
+    <div class="row outer-row">
+
+        <div class="medium-8 large-6 columns">
+
+            <div class="row">
+                <div class="medium-5 large-6 columns">
+                    <h3>Planet Software</h3>
+                    {{ settings.address | markdownify }}
+                </div>
+
+                <div class="medium-6 large-6 columns">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fa fa-phone"></i> <a href="{{ settings.phone }}">{{ settings.phone }}</a></li>
+                        <li><i class="fa fa-fax"></i> <a href="{{ settings.phone }}">{{ settings.fax }}</a></li>
+                        <li><i class="fa fa-skype"></i> <a href="{{ settings.phone }}">planetsoftwareadelaide</a></li>
+                        <li><i class="fa fa-envelope"></i> <a href="{{ settings.phone }}">{{ settings.email }}</a></li>
+                    </ul>
+                </div>
+            </div> <!-- .row -->
+
+        </div> <!-- .columns -->
+
+        <div class="medium-4 large-6 columns">
+
+            <!-- Social Networks -->
+            <ul class="social-networks lv-inline-list close-gapsX text-center medium-text-right">
+                <li><a title="Facebook" href="{{ settings.facebook }}"><i class="fa fa-facebook"></i></a></li>
+                <li><a title="Linkedin" href="{{ settings.linked_in }}"><i class="fa fa-linkedin"></i></a></li>
+                <li><a title="Google Plus" href="{{ settings.google_plus }}"><i class="fa fa-google-plus"></i></a></li>
+                <li><a title="Microsoft Pinpoint" href="{{ settings.pin_point }}"><i class="fa fa-windows"></i></a></li>
+                <li><a title="RSS" href="{{ settings.rss }}"><i class="fa fa-rss"></i></a></li>
+            </ul>
+        </div>
+
+    </div> <!-- .row -->
+</section> <!-- .global-footer-body -->
+
+<!-- FOOTER AFFILIATES -->
+<section class="global-footer-affiliates">
+    <div class="row outer-row">
+        <div class="medium-4 large-offset-8 columns text-center medium-text-right">
+            <ul class="small-block-grid-2">
+                <li>
+                    <a href="https://mspartner.microsoft.com/en/au/Pages/index.aspx"><img width="150" src="/img/template/microsoft-partner-logo@2x.png" alt="Windows Partner Gold Applications"></a>
+                </li>
+                <li>
+                    <a href="http://www.windowsazure.com/"><img width="150" src="/img/template/windows-azure-logo@2x.png" alt="Windows Partner Gold Applications"></a>
+                </li>
+            </ul>
+        </div>
+    </div> <!-- .row -->
+</section> <!-- .global-footer-affiliates -->
+
+<!-- FOOTER LEGAL -->
+<section class="global-footer-legal">
+    <div class="row outer-row">
+        <div class="columns">
+            <a class="left" href="/sitemap/">Sitemap</a>
+            <a class="author-logo text-right" href="http://www.muchmedia.com.au">
+                <span class="text">Website by Much Media</span>&nbsp;
+                <img width="20" src="/img/template/muchmedia-logo@2x.png" title="Much Media Freelance Web Design" alt="Much Media">
+            </a>
+        </div>
+    </div> <!-- .row -->
+</section> <!-- global-footer-legal -->

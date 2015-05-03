@@ -1,0 +1,13 @@
+---
+layout: internal
+---
+
+{% assign products = site.data.products %}
+
+<ul class="medium-block-grid-2 large-block-grid-3">
+	{% for item in products %}
+		<li>
+			{% include media_tile.html %}
+		</li>
+	{% endfor %}
+</ul>

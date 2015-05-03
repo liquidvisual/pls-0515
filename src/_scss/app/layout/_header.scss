@@ -1,7 +1,7 @@
 /*
     HEADER.CSS
 
-    - Last updated: ^^^^^^^^
+    - Last updated: 03.05.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -11,7 +11,7 @@
 // Header
 //-----------------------------------------------------------------
 
-.page-header {
+.global-header {
 	position: relative;
 
 	@media #{$large-up} {
@@ -23,8 +23,9 @@
 //
 //=========================================
 
-.page-header .logo {
+.global-header .logo {
 	position: relative;
+	z-index: 200;
 
 	@media #{$large-up} {
 	    top: rem-calc(36);
@@ -46,8 +47,48 @@
 // Mobile Menu
 //=========================================
 
-.header-mobile-menu {
+.global-header-mobile-menu {
 	position: absolute;
-	bottom: 20px;
+	// bottom: 20px;
 	right: 15px;
+	top: calc(50% - 2px); // to account for top margins of H1s
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+
+//=========================================
+// Hamburger
+//=========================================
+
+.hamburger {
+	@include hamburger($width: 24px, $gap: 5px, $thickness: 4px, $color: #211F20);
+
+	@media #{$medium-up} {
+		@include hamburger($width: 28px, $gap: 6px, $thickness: 5px, $color: #211F20);
+	}
+}
+
+//-----------------------------------------------------------------
+// Header
+//-----------------------------------------------------------------
+
+.header {
+	background: $secondary-color;
+
+	h1 {
+		margin: 0;
+		padding: rem-calc(20 0);
+		font-size: rem-calc(26);
+		color: white;
+
+		@media #{$medium-up} {
+		    padding: rem-calc(20 0);
+		    font-size: rem-calc(36);
+		}
+
+		@media #{$large-up} {
+		    font-size: rem-calc(44);
+		}
+	}
 }

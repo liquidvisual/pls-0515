@@ -1,0 +1,28 @@
+---
+layout: internal
+---
+
+{% assign settings = site.data.settings %}
+{% assign popular_practices = site.data.popular_practices %}
+
+<div class="row outer-row">
+
+    <div class="large-4 columns">
+        {{ content }}
+    </div> <!-- .columns -->
+
+    <!-- SIDEBAR -->
+    <div class="large-8 columns">
+        <aside class="sidebar">
+            <div class="section">
+                <ul class="media-tiles media-tiles-light medium-block-grid-2">
+                    {% for item in popular_practices %}
+                    <li>{% include media_tile_image.html %}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <a target="_blank" href="#" class="button expand grey-button download-button">Download our 'What We Do' brochure for an overview of all our practice areas</a>
+        </aside>
+    </div> <!-- .columns -->
+
+</div> <!-- .outer-row -->

@@ -13,49 +13,37 @@ layout: master
 			<div class="row">
 				<div class="medium-4 columns">
 
-					<h2 class="h3"><span class="hide">Sonia</span>
+					<h3>
 						<a class="logo" href="/products/sonia/" title="Sonia" itemprop="url">
-						    <img width="160" src="/img/content/sonia-logo-white@2x.png" alt="Sonia" itemprop="logo">
+						    <img width="160" src="/img/content/sonia-logo-white@2x.png" title="Sonia" alt="Sonia" itemprop="logo">
 						</a>
-					</h2>
+					</h3>
 
-					<p>Sonia sets the standard for student placement software, assisting placement staff, placement providers and students to view and manage information that relates to them.</p>
+					<p data-match-height>Sonia sets the standard for student placement software, assisting placement staff, placement providers and students to view and manage information that relates to them.</p>
 					<a class="button button-slim" href="/products/sonia/">More</a>
 				</div>
 				<div class="medium-4 columns">
 
-					<h2 class="h3"><span class="hide">Year View</span>
+					<h3>
 						<a class="logo" href="/products/sonia/" title="Sonia" itemprop="url">
-						    <img width="160" src="/img/content/year-view-logo-white@2x.png" alt="Year View" itemprop="logo">
+						    <img width="160" src="/img/content/year-view-logo-white@2x.png" title="Year View" alt="Year View" itemprop="logo">
 						</a>
-					</h2>
+					</h3>
 
-					<p>Year View provides a full year view planner on various calendar data sources within a web browser using the latest Microsoft technologies to provide users with a rich interactive experience.</p>
+					<p data-match-height>Year View provides a full year view planner on various calendar data sources within a web browser using the latest Microsoft technologies to provide users with a rich interactive experience.</p>
 					<a class="button button-slim" href="/products/sonia/">More</a>
 				</div>
 				<div class="medium-4 columns">
-					<h2 class="h3"><span class="text hide">Our Services</span></h2>
-					<p>Planet Software provides world class software development services. We design, architect and develop enterprise-class applications utilising Microsoft and open standard technologies.</p>
+					<h3><span class="text hide">Our Services</span></h3>
+					<p data-match-height>Planet Software provides world class software development services. We design, architect and develop enterprise-class applications utilising Microsoft and open standard technologies.</p>
 					<a class="button button-slim" href="/products/sonia/">More</a>
 				</div>
 			</div>
 		</div>
 		<div class="large-4 columns">
-			<h2 class="h3"><span class="text hide">Latest News</span></h2>
 
-			<ul class="block-list">
-				{% for item in news_entries | limit: 2 %}
-					<li>
-						<!-- SERVER-SIDE TRUNCATION IS *VERY* IMPORTANT HERE (65 chars max) -->
-						<article class="news-article">
-							<date>{{ item.date }}</date>
-							<a href="/about/news/news-item/">{{ item.title | truncate: 65 }} &nbsp;<i class="fa fa-angle-right"></i></a>
-						</article>
-					</li>
-				{% endfor %}
-			</ul>
+			{% include news_panel.html max_entries=3 %}
 
-			<a class="button button-slim" href="/products/sonia/">More</a>
 		</div>
 	</div>
 </section>

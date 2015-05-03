@@ -1,0 +1,29 @@
+---
+layout: internal
+---
+
+{% assign news = site.data.articles %}
+
+<div class="row">
+	<div class="columns">
+
+		<!-- News Articles -->
+		<div class="media-articles">
+			{% for item in news %}
+				{% include media_article.html %}
+			{% endfor %}
+		</div>
+
+		<!-- Pagination Controls -->
+		{% include snippets/pagination.html %}
+
+	</div> <!-- .columns -->
+
+	<!-- SIDEBAR -->
+	<div class="large-4 columns">
+		<aside class="sidebar">
+			{% include snippets/side_nav.html %}
+		</aside>
+	</div>
+
+</div> <!-- .outer-row -->

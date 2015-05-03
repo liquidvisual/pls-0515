@@ -16,35 +16,39 @@ layout: master
 </div>
 
 <!-- HEADER -->
-<section class="lead-section">
+<header class="header">
     <div class="row outer-row">
         <div class="columns">
             <div class="animated fadeInLeft">
-                <h1>{{ page.title }}</h1>
+                {% if page.title_image %}
+                    <h1><img width="170" src="{{ page.title_image }}" title="{{ page.title }}" alt="{{ page.title }}"></h1>
+                {% elsif page.hero_header_override %}
+                    <h1>{{ page.hero_header_override }}</h1>
+                {% else %}
+                    <h1>{{ page.title }}</h1>
+                {% endif %}
             </div>
         </div>
     </div>
-</section>
+</header>
 
-<!-- BREADCRUMBS -->
-<nav class="breadcrumbs-bar">
-    <div class="row outer-row">
-        <div class="columns">
-            {% include snippets/breadcrumbs.html %}
+{% if page.back_title %}
+    <!-- BREADCRUMBS -->
+    <nav class="breadcrumbs-bar">
+        <div class="row outer-row">
+            <div class="columns">
+                <a href="/{{ page.back_title | downcase }}/"><i class="fa fa-angle-left"></i> Back to {{ page.back_title  }}</a>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
+{% endif %}
 
+<!-- CONTENT -->
 <section class="content">
     <div class="row outer-row">
         <div class="large-9 columns">
             <main class="main">
                 <header class="main-header">
-
-                    <!-- Opt-in Back Button -->
-                    {% if page.back_title %}
-                        <a class="button grey-button" href="#" ><i class="fa fa-angle-left"></i>&nbsp; Back to {{ page.back_title }}</a>
-                    {% endif %}
 
                 </header>
                 {{ content }}
@@ -55,4 +59,3 @@ layout: master
         </div>
     </div>
 </section>
-

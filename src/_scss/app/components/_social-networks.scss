@@ -1,7 +1,7 @@
 /*
     SOCIAL-NETWORKS.CSS
 
-    - Last updated: ^^^^^^^^
+    - Last updated: 02.05.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -11,8 +11,39 @@
 // Social Networks
 //-----------------------------------------------------------------
 
+.social-networks {
+	a {
+		display: block;
+		width: rem-calc(40);
+		// border: 1px solid white;
+		background: lighten($dark-color, 10%);
+		font-size: rem-calc(20);
+		line-height: 40px;
+		height: 40px;
+		text-align: center;
+		// margin-left: rem-calc(10); // special case
+		color: white;
+		border-radius: $global-radius;
+	}
+}
 
+.mm-nolist.social-networks {
+	padding-top: rem-calc(10);
+	overflow: hidden;
+	margin-bottom: rem-calc(15);
+
+	a {
+		margin: rem-calc(0 10 0 0);
+	}
+}
 
 //=========================================
 //
 //=========================================
+
+.global-footer .social-networks a:hover {
+	@media #{$large-up} {
+	    background: white;
+	    color: $secondary-color;
+	}
+}

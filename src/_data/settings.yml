@@ -1,19 +1,24 @@
 # GLOBAL SITE SETTINGS
 
 # General
-seo_title: ""
-title: ""
-company: ""
+seo_title: "Planet Software Australia"
+title: "Planet Software"
+company: "Planet Software"
 description: ""
 
 # Contact Info
-email: test@example.com
-phone: (05) 555 555
-fax: (05) 555 555
-address: "ABC Street, Earth"
+email: info@planetsoftware.com.au
+phone: +61 8 8443 6499
+fax: +61 8 8352 7572
+address: "Planet Software Pty Ltd<br> 82 Rose Street<br> Mile End SA 5031 Australia"
 
 # Social Networks
-facebook: ""
+facebook: "http://www.facebook.com/planetsoftwareaustralia"
+linked_in: "http://www.linkedin.com/company/planet-software"
+google_plus: "https://plus.google.com/110179816396087474953/posts"
+skype: "skype:planetsoftwareadelaide?call"
+pin_point: "http://pinpoint.microsoft.com/en-AU/PartnerDetails.aspx?PartnerId=4295488851"
+rss: "http://blogs.planetsoftware.com.au/MainFeed.aspx"
 
 # Google Map
 google_map: ""

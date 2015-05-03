@@ -21,14 +21,15 @@ ul li {
 
 .block-list {
 	list-style: none;
-	margin: 0 !important; // reset
+	margin: 0; // reset
 
 	li {
 		position: relative;
 		border-top: 1px solid #CECECC;
 		border-bottom: 1px solid #CECECC;
 		margin: rem-calc(-1 0 0 0);
-		padding: rem-calc(20 0);
+		border-color: lighten($secondary-color, 5%);
+		padding: rem-calc(10 0);
 	}
 
 	a {
@@ -50,11 +51,6 @@ ul li {
 //=========================================
 // Contexts
 //=========================================
-
-.block-list li {
-	border-color: lighten($secondary-color, 5%);
-	padding: rem-calc(10 0);
-}
 
 //-----------------------------------------------------------------
 // Triangle List
