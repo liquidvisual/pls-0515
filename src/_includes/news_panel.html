@@ -3,21 +3,6 @@
 
 <div class="news-panel">
 
-	{% comment %}
-	<h3><span class="text">Latest News</span></h3>
-	<ul class="block-list">
-		{% for item in news_entries | limit: max_entries %}
-			<li class="{% if forloop.index == 3 %} hide-for-large-up {% endif %}">
-				<!-- SERVER-SIDE TRUNCATION IS *VERY* IMPORTANT HERE (65 chars max) -->
-				<article class="news-article">
-					<date>{{ item.date }}</date>
-					<a href="/about/news/news-item/">{{ item.title | truncate: 65 }} &nbsp;<i class="fa fa-angle-right"></i></a>
-				</article>
-			</li>
-		{% endfor %}
-	</ul>
-	{% endcomment %}
-
 	<h3><span class="text">Latest News</span></h3>
 
 	<div class="news-articles">
