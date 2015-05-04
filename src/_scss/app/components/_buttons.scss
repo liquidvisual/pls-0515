@@ -45,6 +45,10 @@
 		height: 100%;
 		background: $secondary-color;
 	}
+
+	&:hover {
+		background: darken($secondary-color, 25%);
+	}
 }
 
 //=========================================
@@ -78,6 +82,7 @@
 	padding: rem-calc(30 15);
 	width: 100%;
 	background: #3A3C3C;
+	margin: 0;
 
 	.text {
 		position: absolute;

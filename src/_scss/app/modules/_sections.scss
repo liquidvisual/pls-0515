@@ -40,14 +40,23 @@
 	}
 
 	h2, h3 {
-		display: table;
-		height: 56px;
-		width: 100%;
 		margin-bottom: rem-calc(20);
+
+		@media #{$medium-up} {
+		    display: table;
+		    height: 56px;
+		    width: 100%;
+		}
 
 		.text {
 			display: table-cell;
 			vertical-align: bottom;
+		}
+	}
+
+	h3 img {
+		@media #{$small-only} {
+		    width: 120px;
 		}
 	}
 

@@ -44,36 +44,38 @@ Check the FAQ!
 	<tbody>
 		<tr>
 			<th>Licence Type</th>
-			<th align="center" style="text-align: center;">Price(AUD)</th>
+			<th>Price (AUD)</th>
 			<th>Restrictions</th>
 		</tr>
 		<tr>
 			<td>Individual Users</td>
-			<td align="center">$29.95</td>
+			<td>$29.95</td>
 			<td>Per Mailbox</td>
 		</tr>
 		<tr>
 			<td>User Package</td>
-			<td align="center">$150.00</td>
+			<td>$150.00</td>
 			<td>5-10 Mailboxes</td>
 		</tr>
 		<tr>
 			<td>Multiple Users</td>
-			<td align="center">$15.00</td>
+			<td>$15.00</td>
 			<td>Per Mailbox for more than 10</td>
 		</tr>
 		<tr>
-			<td>Small/Medium Business</td>
-			<td align="center">$12,500.00</td>
-			<td>&lt; 2000 Mailboxes</td>
+			<td>Small / Medium Business</td>
+			<td>$12,500.00</td>
+			<td>2000 Mailboxes</td>
 		</tr>
 		<tr>
 			<td>Enterprise</td>
-			<td align="center">POA</td>
-			<td>&nbsp;Please contact us</td>
+			<td>POA</td>
+			<td>Please contact us</td>
 		</tr>
 	</tbody>
 </table>
+
+<br>
 
 Please note that the price is in Australian Dollars (excludes GST).
 

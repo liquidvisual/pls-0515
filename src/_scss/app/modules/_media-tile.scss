@@ -27,11 +27,18 @@
 	}
 
 	.media-tile-link {
+		@include transition('background, color');
 		display: block;
 		padding: rem-calc(5 20);
 		background: #DEDEDE;
 		text-align: right;
 		color: grey;
+	}
+
+	&:hover .media-tile-link {
+		@media #{$medium-up} {
+		    background: darken(#DEDEDE, 10%);
+		}
 	}
 }
 

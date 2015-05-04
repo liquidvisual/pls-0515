@@ -18,7 +18,6 @@ $footer-body-font-color: darken($grey-color, 25%);
 	position: relative;
 	background: $dark-color;
 	// box-shadow: inset 0px 3px 4px 0px rgba(0,0,0,0.09);
-
 	color: $footer-body-font-color;
 
 	h1, h2, h3, h4, h5, h6 {
@@ -61,6 +60,10 @@ $footer-body-font-color: darken($grey-color, 25%);
 
 .global-footer-body {
 	padding: rem-calc(40 0 20 0);
+
+	.z-forward {
+		z-index: 1;
+	}
 
 	@media #{$medium-up} {
 	    padding: rem-calc(40 0);
