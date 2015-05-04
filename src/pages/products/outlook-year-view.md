@@ -1,7 +1,7 @@
 ---
 layout: internal/text_page
 title: Outlook Year View
-title_image: "/img/content/year-view-logo-white@2x.png"
+title_image: "/img/content/outlook-year-view-logo-white@2x.png"
 permalink: /products/outlook-year-view/
 hero_image: /img/content/banners/banner-clock-calendar.jpg
 back_title: Products
