@@ -32,7 +32,8 @@
 
 	@media #{$large-up} {
 	    position: absolute;
-	    bottom: 26px;
+	    // bottom: 26px;
+        bottom: 39px;
 	    width: 100%; // locked
 	    padding: 0 $column-gutter/2; // locked
 	    // background: orange;
@@ -46,7 +47,8 @@
 .topbar ul {
 	list-style: none; // locked
 	margin: 0; // locked
-	font-size: rem-calc(16);
+	font-size: rem-calc(15);
+    text-transform: uppercase;
 }
 
 //=========================================
@@ -131,6 +133,7 @@
     width: rem-calc(220);
     background: #DCDBDB;
     margin: 0;
+    padding: rem-calc(16);
 }
 
 .topbar > ul > li:last-child .dropdown {
@@ -152,15 +155,16 @@
 }
 
 .topbar .dropdown a {
-    border-top: 1px solid #D3D2D2;
+    border-top: 1px solid #CCCCCC;
     margin: 0;
     text-align: left;
     transition: none;
-    font-size: rem-calc(16);
+    font-size: rem-calc(15);
 }
 
 .topbar .dropdown li:last-child a {
-    border-bottom: 0;
+    // border-bottom: 0;
+    border-bottom: 1px solid #CCCCCC;
 }
 
 .topbar .dropdown a:hover {

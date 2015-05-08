@@ -78,6 +78,12 @@ $caption-bg-color: rgba(255, 255, 255, 0.6);
 		    line-height: 2.2;
 		}
 
+		// img {
+		// 	@media #{$devices-only} {
+
+		// 	}
+		// }
+
 		span {
 			padding: rem-calc(10 0);
 			box-shadow: 0.5em 0 0 $caption-bg-color, -0.5em 0 0 $caption-bg-color;

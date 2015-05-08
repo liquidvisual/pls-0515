@@ -61,8 +61,13 @@
 	}
 
 	p {
-		font-size: rem-calc(14);
 		padding-bottom: rem-calc(20);
+	}
+
+	p,
+	.button,
+	.news-article a {
+		font-size: rem-calc(13);
 	}
 
 	// .button {
