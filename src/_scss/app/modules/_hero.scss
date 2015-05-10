@@ -22,6 +22,16 @@ $caption-bg-color: rgba(255, 255, 255, 0.6);
 
 .lv-hero {
 	background-color: #212322;
+
+	@media #{$medium-up} {
+	    background-size: auto;
+	}
+}
+
+.is-homepage .lv-hero {
+	@media #{$small-only} {
+	    height: auto !important;
+	}
 }
 
 .lv-hero .table-wrapper {
@@ -62,6 +72,10 @@ $caption-bg-color: rgba(255, 255, 255, 0.6);
 //=========================================
 
 .lv-hero-module .lv-hero-caption {
+	@media #{$small-only} {
+	    padding: rem-calc(30 0);
+	}
+
 	@media #{$medium-up} {
 	    margin-bottom: rem-calc(40);
 	}

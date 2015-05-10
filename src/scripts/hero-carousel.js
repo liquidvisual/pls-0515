@@ -21,12 +21,12 @@ $(function() {
         var largeUp = $(window).width() > 1025; // no more touch
 
         bxSliderHero = $('.js-carousel').bxSlider({
-            auto: false, // (largeUp ? true : false),
+            auto: (largeUp ? true : false),
             mode: 'fade',
             adaptiveHeight: true,
             responsive: true,
             touchEnabled: false,
-            speed: 1800,
+            speed: 1500,
             pause: 6000, // Slow timer
             slideMargin: 0,
             slideSelector: ".lv-hero",
